@@ -3,6 +3,15 @@ Es werden hier zwei Optinen vorgestellt. Selber kompieleren und einfach eine VMD
 
 Es ist keine Vollständige und 100% funktionierende Anleitung. Ich werde es versuchen aktuell zu halten, aber es kommen immer wieder kleine Fehler/Probleme die man selbst lösen muss. Als beispiel, manchmal wird eine **combined-esxi.vmdk** Datei erstellt und machmal nicht (diese muss man vor dem Einsatz erst konverteren)
 
+#### Einsatzzweck
+Router mit einen OpenVPN Client und WLAN Accespoint.
+
+Ein Mal USB-Stick im AP Mode und ein mal Intel MiniPCIe Karte im AP-Mode. *(nicht jede WLAN Karte oder USB Stick lassen sich unter OpenWRT im AP Mode betreiben obwohl sie unter Linux oder Windows dies tum)*
+
+Ich habe zwei duch probieren gefunden
++ TP-Link
++ Intel PCIe 8260
+
 >Falls Sie die 'Build Umgebung' in eine VM betreiben, dann vor jeden Update ein Snapshots erstellen !
 
 ## Selber kompilieren
@@ -16,6 +25,8 @@ cd openwrt
 ./scripts/feeds update -a
 ./scripts/feeds install -a
 ```
+
+### OpenWrt Konfiguration
 Anschliessend starten wir die Menügeführte / Textbasierende Konfiguration mit `make menuconfig` und wählen folgende Punkte:
 
 + Target System > **x86**
