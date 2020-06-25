@@ -35,6 +35,8 @@ Anschliessend starten wir die Menügeführte / Textbasierende Konfiguration mit 
 + Target Images
   + Build VMware image files (VMDK) > **x**
   + Seconds to wait before booting the default entry | **1**
++ Utilities
+  + open-vm-tools | **x**
 + Administration
   + htop | **x**
 
@@ -55,8 +57,6 @@ Falls man keinen OpenVPN Support oder WLAN Support benötigt, so kann man auf de
   +openvpn-openssl | **x**
 + Network > WirelessAPD
   + wpad | **x**
-+ Utilities
-  + open-vm-tools | **x**
 + LuCI > 3. Applications
   + luci-app-openvpn | **x**
   + luci-app-statistics | **x**
