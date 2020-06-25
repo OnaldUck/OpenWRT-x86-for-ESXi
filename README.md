@@ -37,6 +37,9 @@ Anschliessend starten wir die Menügeführte / Textbasierende Konfiguration mit 
   + Seconds to wait before booting the default entry | **1**
 + Administration
   + htop | **x**
+
+Falls man keinen OpenVPN Support oder WLAN Support benötigt, so kann man auf den Rest versichten und direkt kompilieren.
+  
 + Kernel modules > Network Devices
   + kmod-vmxnet3 | **x**
 + Kernel modules > USB Support
@@ -57,10 +60,13 @@ Anschliessend starten wir die Menügeführte / Textbasierende Konfiguration mit 
 + LuCI > 3. Applications
   + luci-app-openvpn | **x**
   + luci-app-statistics | **x**
- 
-Wenn alles erledigt ist wir mit dem Befehl `make` das Image kreirt. Wenn man z.B. 6 Kerne CPU besitzt kann man den Parameter -j6 hinzufügen. Das dauert 10-15 Minuten beim ersten Mal.
+
+### Kompilieren
+Wenn alles angehackt ist wir mit dem Befehl `make` das Image kreirt. Wenn man z.B. 6 Kerne CPU besitzt kann man den Parameter -j6 hinzufügen. Das dauert 10-15 Minuten beim ersten Mal.
 
 `make -j6`
+
+Das fertige Image befindet sich in `~/openwrt/bin/targets/x86/64/`
 
 ### git Ordner aktualisieren und frisch kompilieren
 git pull
