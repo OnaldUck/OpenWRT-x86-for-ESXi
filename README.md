@@ -64,14 +64,20 @@ Falls man keinen OpenVPN Support oder WLAN Support benötigt, so kann man auf de
 >Das fette **x** bedeutet Sternchen. Ich weiß nicht, wie man es hier darstellt.
 
 ### Kompilieren
-Wenn alles angehackt ist wir mit dem Befehl `make` das Image kreirt. Wenn man z.B. 6 Kerne CPU besitzt kann man den Parameter -j6 hinzufügen. Das dauert 10-15 Minuten beim ersten Mal.
+Wenn alles angehackt ist wir mit dem Befehl `make` das Image kreirt. Wenn man z.B. 6 Kerne CPU besitzt kann man den Parameter -j6 hinzufügen. Das Ganze dauert 10-15 Minuten beim ersten Mal.
 
 `make -j6`
 
 Das fertige Image befindet sich in `~/openwrt/bin/targets/x86/64/`
 
 ### git Ordner aktualisieren und frisch kompilieren
+
+```
+cd openwrt
 git pull
+./scripts/feeds update -a
+./scripts/feeds install -a
+```
 
 ### Fertiges Image 
 https://downloads.openwrt.org/releases/19.07.3/targets/x86/64/
