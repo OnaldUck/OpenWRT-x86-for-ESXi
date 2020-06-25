@@ -61,6 +61,8 @@ Falls man keinen OpenVPN Support oder WLAN Support benötigt, so kann man auf de
   + luci-app-openvpn | **x**
   + luci-app-statistics | **x**
 
+>Das fette **x** bedeutet Sternchen. Ich weiß nicht, wie man es hier darstellt.
+
 ### Kompilieren
 Wenn alles angehackt ist wir mit dem Befehl `make` das Image kreirt. Wenn man z.B. 6 Kerne CPU besitzt kann man den Parameter -j6 hinzufügen. Das dauert 10-15 Minuten beim ersten Mal.
 
