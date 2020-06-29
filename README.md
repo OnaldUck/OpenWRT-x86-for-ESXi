@@ -1,7 +1,7 @@
 # OpenWRT-x86-for-ESXi
 Es werden hier zwei Optinen vorgestellt. Selber kompieleren und einfach eine VMDK herunterladen und eine virtuelle Maschine damit erstellen.
 
-Es ist keine Vollständige und 100% funktionierende Anleitung. Ich werde es versuchen aktuell zu halten, aber es kommen immer wieder kleine Fehler/Probleme die man selbst lösen muss. Als beispiel, manchmal wird eine **combined-esxi.vmdk** Datei erstellt und machmal nicht (diese muss man vor dem Einsatz erst konverteren)
+Es ist keine Vollständige und 100% funktionierende Anleitung. Ich werde es versuchen aktuell zu halten, aber es kommen immer wieder kleine Fehler/Probleme die man selbst lösen muss. Als beispiel, manchmal wird eine `combined-ext4-esxi-flat.vmdk` Datei erstellt und machmal nicht (diese muss man vor dem Einsatz erst konverteren)
 
 #### Einsatzzweck
 Router mit einen OpenVPN Client und WLAN Accespoint.
@@ -74,18 +74,18 @@ Das fertige Image befindet sich in `~/openwrt/bin/targets/x86/64/`
 
 ```
 cd openwrt
-git pullqemu-img convert -f raw -O vmdk a:\openwrt-x86-64-generic-ext4-combined.img a:\openwrt-ext4.vmdk
+git pull
 ./scripts/feeds update -a
 ./scripts/feeds install -a
 ```
 
 ### Fertiges Image
 Es gibt auch die Möglichkeit sich ein fertiges Image https://downloads.openwrt.org/releases/19.07.3/targets/x86/64/ herunter zu laden.
-Es sollte **combines-ext4.img.gz** gewählt werden.
+Es sollte `combines-ext4.img.gz` gewählt werden.
 
 Anschliessend folgen 3 Schritte durchführen:
 
-+ die Datei combines-ext4.img.gz entpacken
++ die Datei `combines-ext4.img.gz` entpacken
 + mit `qemu-img.exe` die Datei `openwrt-19.07.3-x86-64-combined-ext4.img` konvertieren
 
 `qemu-img.exe convert -f raw -O vmdk a:\openwrt-x86-64-generic-ext4-combined.img a:\openwrt-ext4.vmdk`
