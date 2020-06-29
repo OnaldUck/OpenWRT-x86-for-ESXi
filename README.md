@@ -1,10 +1,10 @@
 # OpenWRT-x86-for-ESXi
 Es werden hier zwei Optinen vorgestellt. Selber kompieleren und einfach eine VMDK herunterladen und eine virtuelle Maschine damit erstellen.
 
-Es ist keine Vollständige und 100% funktionierende Anleitung. Ich werde es versuchen aktuell zu halten, aber es kommen immer wieder kleine Fehler/Probleme die man selbst lösen muss. Als beispiel, manchmal wird eine `combined-ext4-esxi-flat.vmdk` Datei erstellt und machmal nicht (*diese muss man vor dem Einsatz erst zurecht konverteren*)
+Es ist keine Vollständige und 100% funktionierende Anleitung. Ich werde es versuchen aktuell zu halten, aber es kommen immer wieder kleine Fehler/Probleme die man selbst lösen muss. Als beispiel, manchmal wird eine `openwrt-x86-64-combined-ext4-esxi.vmdk` und `openwrt-x86-64-combined-ext4-esxi-flat.vmdk` Datei erstellt und machmal nicht (*diese muss man vor dem Einsatz erst zurecht konverteren*)
 
 #### Einsatzzweck
-Router mit einen OpenVPN Client und WLAN Accespoint.
+virtueller Router mit einen OpenVPN Client und WLAN Accespoint für einen ESX Server.
 
 Ein Mal USB-Stick im AP Mode und ein mal Intel MiniPCIe Karte im AP-Mode. *(nicht jede WLAN Karte oder USB Stick lassen sich unter OpenWRT im AP Mode betreiben obwohl sie unter Linux oder Windows dies tum)*
 
@@ -14,7 +14,7 @@ Ich habe zwei duch probieren gefunden
 
 >Falls Sie die 'Build Umgebung' in eine VM betreiben, dann vor jeden Update ein Snapshots erstellen !
 
-## Selber kompilieren
+## Selbst kompilieren
 Wie man das Betriebssystem vorbereitet, steht auf der OpenWRT Seite hier: [Build system – Setup Linux!](https://openwrt.org/docs/guide-developer/build-system/install-buildsystem).
 Theoretisch folgende Zeile abfeuern `apt install subversion build-essential libncurses5-dev zlib1g-dev gawk git ccache gettext libssl-dev xsltproc zip` und fertig.
 
@@ -94,7 +94,7 @@ Anschliessend folgen 3 Schritte durchführen:
 `vmkfstools -i /vmfs/volumes/ssd/Openwrt/openwrt-ext4.vmdk -d thin /vmfs/volumes/ssd/Openwrt/Openwrt.vmdk`
 
 #### Einschänkunger
-Aus meiner Arfahrung funktionieren nicht alle Treiber die in so ein Image nachträglich installiert werden. z.B. wenn man WLAN Stick oder Karte betreibenmöchte.
+Aus meiner Erfahrung funktionieren nicht alle Treiber die in so ein Image nachträglich installiert werden. z.B. wenn man WLAN Stick oder Karte betreibenmöchte.
 
 Für die 'normale' Router oder VPN Funktionalität, sind diese Images uneingeschänkt nutzbar.
 
