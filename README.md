@@ -52,7 +52,7 @@ Falls man keinen OpenVPN Support oder WLAN Support benötigt, so kann man auf de
 + Firmware
   + iwlwifi-firmware-iwl8260c | **x**
   + rtl8192eu-firmware | **x**
-  + wireles-regdb | **x**
+>  + wireles-regdb | **x**
 + Network > VPN
   + openvpn-openssl | **x**
 + Network > WirelessAPD
@@ -74,3 +74,4 @@ Das fertige Image befindet sich in `~/openwrt/bin/targets/x86/64/`
 
 ### paar Bilder
 ![make_menuconfig](https://user-images.githubusercontent.com/35377000/86009497-95997680-ba1a-11ea-89e8-fca909e72438.png)
+
