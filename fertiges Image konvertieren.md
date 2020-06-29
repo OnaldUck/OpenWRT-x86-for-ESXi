@@ -1,5 +1,5 @@
 ### Fertiges Image konvertieren
-Es gibt auch die Möglichkeit sich ein fertiges Image https://downloads.openwrt.org/releases/19.07.3/targets/x86/64/ herunter zu laden.
+Es gibt auch die Möglichkeit sich ein fertiges Image https://downloads.openwrt.org/releases/19.07.3/targets/x86/64/ herunter zu laden un zu konvertieren.
 Es sollte `combines-ext4.img.gz` gewählt werden.
 
 Anschliessend folgen 3 Schritte durchführen:
