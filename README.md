@@ -39,11 +39,13 @@ Anschliessend starten wir die Menügeführte / Textbasierende Konfiguration mit 
   + open-vm-tools | **x**
 + Administration
   + htop | **x**
-
-Falls man keinen OpenVPN Support oder WLAN Support benötigt, so kann man auf den Rest versichten und direkt kompilieren.
-  
 + Kernel modules > Network Devices
   + kmod-vmxnet3 | **x**
++ LuCI > 1. Collections
+  + luci | **x**
+
+Falls man keinen OpenVPN Support oder WLAN Support benötigt, so kann man auf den Rest verzichten und direkt kompilieren. Hier die benötigten Module für einen WLAN-Access Poiint
+
 + Kernel modules > USB Support
   + kmod-usb-core | **x**
 + Kernel modules > Wireless Drivers
@@ -52,16 +54,16 @@ Falls man keinen OpenVPN Support oder WLAN Support benötigt, so kann man auf de
 + Firmware
   + iwlwifi-firmware-iwl8260c | **x**
   + rtl8192eu-firmware | **x**
->  + wireles-regdb | **x**
-+ Network > VPN
-  + openvpn-openssl | **x**
 + Network > WirelessAPD
   + wpad | **x**
-+ LuCI > 1. Collections
-  + luci | **x**
+
+Dies braucht man wenn man OpenVPN Server oder Client auf den Router laufen lassen möchte.
+
 + LuCI > 3. Applications
   + luci-app-openvpn | **x**
   + luci-app-statistics | **x**
++ Network > VPN
+  + openvpn-openssl | **x**
 
 >Das fette **x** bedeutet Sternchen. Ich weiß nicht, wie man es hier darstellt.
 
