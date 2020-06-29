@@ -57,7 +57,7 @@ Falls man keinen OpenVPN Support oder WLAN Support benötigt, so kann man auf de
 + Network > WirelessAPD
   + wpad | **x**
 
-Dies braucht man wenn man OpenVPN Server oder Client auf den Router laufen lassen möchte.
+Dies braucht man, wenn man OpenVPN Server oder Client auf den Router laufen lassen möchte.
 
 + LuCI > 3. Applications
   + luci-app-openvpn | **x**
@@ -73,6 +73,12 @@ Wenn alles angehackt ist wir mit dem Befehl `make` das Image kreirt. Wenn man z.
 `make -j6`
 
 Das fertige Image befindet sich in `~/openwrt/bin/targets/x86/64/`
+
+### VMDK flat erzeugen
+Damit der ESXi Server das Image akzeptiert muss die fertig kompilierte Datei `openwrt-x86-64-generic-ext4-combined.img` auf den ESX kopiert werden und eine VMDK-flat-Datei erzeugen werden.
+
+`vmkfstools -i /vmfs/volumes/ssd/Openwrt/
+openwrt-x86-64-generic-ext4-combined.img -d thin /vmfs/volumes/ssd/Openwrt/Openwrt.vmdk`
 
 ### Ein paar Bilder
 ![make_menuconfig](https://user-images.githubusercontent.com/35377000/86009497-95997680-ba1a-11ea-89e8-fca909e72438.png)
