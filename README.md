@@ -54,9 +54,11 @@ Falls man keinen OpenVPN Support oder WLAN Support benötigt, so kann man auf de
   + rtl8192eu-firmware | **x**
   + wireles-regdb | **x**
 + Network > VPN
-  +openvpn-openssl | **x**
+  + openvpn-openssl | **x**
 + Network > WirelessAPD
   + wpad | **x**
++ LuCI > 1. Collections
+  + luci | **x**
 + LuCI > 3. Applications
   + luci-app-openvpn | **x**
   + luci-app-statistics | **x**
