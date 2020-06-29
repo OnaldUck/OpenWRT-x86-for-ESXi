@@ -1,7 +1,7 @@
 # OpenWRT-x86-for-ESXi
 Es werden hier zwei Optinen vorgestellt. Selber kompieleren und einfach eine VMDK herunterladen und eine virtuelle Maschine damit erstellen.
 
-Es ist keine Vollständige und 100% funktionierende Anleitung. Ich werde es versuchen aktuell zu halten, aber es kommen immer wieder kleine Fehler/Probleme die man selbst lösen muss. Als beispiel, manchmal wird eine `combined-ext4-esxi-flat.vmdk` Datei erstellt und machmal nicht (diese muss man vor dem Einsatz erst konverteren)
+Es ist keine Vollständige und 100% funktionierende Anleitung. Ich werde es versuchen aktuell zu halten, aber es kommen immer wieder kleine Fehler/Probleme die man selbst lösen muss. Als beispiel, manchmal wird eine `combined-ext4-esxi-flat.vmdk` Datei erstellt und machmal nicht (*diese muss man vor dem Einsatz erst zurecht konverteren*)
 
 #### Einsatzzweck
 Router mit einen OpenVPN Client und WLAN Accespoint.
