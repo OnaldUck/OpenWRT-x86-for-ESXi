@@ -69,3 +69,6 @@ Wenn alles angehackt ist wir mit dem Befehl `make` das Image kreirt. Wenn man z.
 `make -j6`
 
 Das fertige Image befindet sich in `~/openwrt/bin/targets/x86/64/`
+
+### paar Bilder
+![make_menuconfig](https://user-images.githubusercontent.com/35377000/86009497-95997680-ba1a-11ea-89e8-fca909e72438.png)
