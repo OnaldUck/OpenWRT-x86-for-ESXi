@@ -6,7 +6,7 @@ Es ist keine Vollständige und 100% funktionierende Anleitung. Ich werde es vers
 #### Einsatzzweck
 virtueller Router mit einen OpenVPN Client und WLAN Accespoint für einen ESX Server.
 
-Ein Mal USB-Stick im AP Mode und ein mal Intel MiniPCIe Karte im AP-Mode. *(nicht jede WLAN Karte oder USB Stick lassen sich unter OpenWRT im AP Mode betreiben obwohl sie unter Linux oder Windows dies tum)*
+Ein Mal USB-Stick im AP Mode und ein mal Intel MiniPCIe Karte im AP-Mode. *(nicht alle WLAN Karten oder USB Stick lassen sich unter OpenWRT im AP Modus betreiben, obwohl sie unter Linux oder Windows dies tun)*
 
 Ich habe zwei duch probieren gefunden
 + TP-Link
@@ -74,6 +74,6 @@ Wenn alles angehackt ist wir mit dem Befehl `make` das Image kreirt. Wenn man z.
 
 Das fertige Image befindet sich in `~/openwrt/bin/targets/x86/64/`
 
-### paar Bilder
+### Ein paar Bilder
 ![make_menuconfig](https://user-images.githubusercontent.com/35377000/86009497-95997680-ba1a-11ea-89e8-fca909e72438.png)
 
