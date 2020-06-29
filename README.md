@@ -86,12 +86,11 @@ Es sollte **combines-ext4.img.gz** gewählt werden.
 Anschliessend folgen 3 Schritte durchführen:
 
 + die Datei combines-ext4.img.gz entpacken
-+ mit `qemu-img` die Datei `openwrt-19.07.3-x86-64-combined-ext4.img` konvertieren
++ mit `qemu-img.exe` die Datei `openwrt-19.07.3-x86-64-combined-ext4.img` konvertieren
 
-`qemu-img convert -f raw -O vmdk a:\openwrt-x86-64-generic-ext4-combined.img a:\openwrt-ext4.vmdk`
-+ auf den ESX kopieren und eien VMDK flat erzeugen
-++  `vmkfstools -i /vmfs/volumes/ssd/Openwrt/openwrt-ext4.vmdk -d thin /vmfs/volumes/nvme/Openwrt/Openwrt.vmdk`
+`qemu-img.exe convert -f raw -O vmdk a:\openwrt-x86-64-generic-ext4-combined.img a:\openwrt-ext4.vmdk`
++ auf den ESX kopieren und eie VMDK-flat-Datei erzeugen
 
-
+`vmkfstools -i /vmfs/volumes/ssd/Openwrt/openwrt-ext4.vmdk -d thin /vmfs/volumes/nvme/Openwrt/Openwrt.vmdk`
 
 
