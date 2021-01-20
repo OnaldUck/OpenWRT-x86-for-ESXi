@@ -1,10 +1,10 @@
 # OpenWRT-x86-for-ESXi
-Es werden hier zwei Optinen vorgestellt. Selber kompieleren und einfach eine VMDK herunterladen und eine virtuelle Maschine damit erstellen.
+Es werden hier zwei Optionen vorgestellt. Selber kompieleren und einfach eine VMDK herunterladen und eine virtuelle Maschine damit erstellen.
 
 Es ist keine Vollständige und 100% funktionierende Anleitung. Ich werde es versuchen aktuell zu halten, aber es kommen immer wieder kleine Fehler/Probleme die man selbst lösen muss. Als beispiel, manchmal wird eine `openwrt-x86-64-combined-ext4-esxi.vmdk` und `openwrt-x86-64-combined-ext4-esxi-flat.vmdk` Datei erstellt und machmal nicht (*diese muss man vor dem Einsatz erst zurecht konverteren*)
 
 #### Einsatzzweck
-virtueller Router mit einen OpenVPN Client und WLAN Accespoint für einen ESX Server.
+Virtueller Router mit einen WLAN Accespoint für einen ESX Server. Das heißt zwar eine VM die jedoch eine PCIe WLAN Karte durchgescheift bekommt oder ein USB WLAN Sick angehängt wird.
 
 Ein Mal USB-Stick im AP Mode und ein mal Intel MiniPCIe Karte im AP-Mode. *(nicht alle WLAN Karten oder USB Stick lassen sich unter OpenWRT im AP Modus betreiben, obwohl sie unter Linux oder Windows dies tun)*
 
