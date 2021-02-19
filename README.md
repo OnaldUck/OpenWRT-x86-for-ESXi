@@ -16,7 +16,7 @@ Ich habe zwei duch probieren gefunden
 
 ## Selbst kompilieren
 Wie man das Betriebssystem vorbereitet, steht auf der OpenWRT Seite hier: [Build system – Setup Linux!](https://openwrt.org/docs/guide-developer/build-system/install-buildsystem).
-Theoretisch folgende Zeile abfeuern `apt install subversion build-essential libncurses5-dev zlib1g-dev gawk git ccache gettext libssl-dev xsltproc zip` und fertig.
+Theoretisch folgende Zeile abfeuern `apt install subversion build-essential libncurses5-dev zlib1g-dev gawk git ccache gettext libssl-dev xsltproc zip qemu-utils` und fertig.
 
 Danach werden folgende Kommandos ausgeführt:
 ```
