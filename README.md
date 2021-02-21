@@ -44,18 +44,6 @@ Anschliessend starten wir die Menügeführte / Textbasierende Konfiguration mit 
 + Kernel modules > Network Devices
   + kmod-vmxnet3 | **x**
 
-Bei der Gelegenheit unnütze Treiber entfernen. Den Stern entfernen
-
-  + kmod-bnx2
-  + kmod-e1000e
-  + kmod-forcedeth
-  + kmod-igb
-  + kmod-ixgbe
-  + kmod-r8169
-  + kmod-ph-realtek
-  + kmod-mii
-  + komd-libphy
-
 Falls man keinen OpenVPN Support oder WLAN Support benötigt, so kann man auf den Rest verzichten und direkt kompilieren.
 Hier die benötigten Module für einen WLAN-Access Poiint
 
@@ -79,6 +67,24 @@ Dies braucht man, wenn man OpenVPN Server oder Client auf den Router laufen lass
   + openvpn-openssl | **x**
 
 >Das fette **x** bedeutet Sternchen. Ich weiß nicht, wie man es hier darstellt.
+
+#### Balast entfernen
+Bei der Gelegenheit unnütze Treiber entfernen. Den Stern entfernen
+
++ Kernel modules > Network Devices
+  + kmod-bnx2
+  + kmod-e1000e
+  + kmod-forcedeth
+  + kmod-igb
+  + kmod-ixgbe
+  + kmod-r8169
+  + kmod-ph-realtek
+  + kmod-mii
+  + komd-libphy
+
++ Firmware
+  + bnx2-firmware
+  + r8192-firmware
 
 ### Kompilieren
 Wenn alles angehackt ist wir mit dem Befehl `make` das Image kreirt. Wenn man z.B. 6 Kerne CPU besitzt kann man den Parameter -j6 hinzufügen. Das Ganze dauert 10-15 Minuten beim ersten Mal.
