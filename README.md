@@ -63,8 +63,10 @@ Dies braucht man, wenn man OpenVPN Server oder Client auf den Router laufen lass
 + LuCI > 3. Applications
   + luci-app-openvpn | **x**
   + luci-app-statistics | **x**
+  + luci-appwireguard | **x**
 + Network > VPN
   + openvpn-openssl | **x**
+  + wireguard | **x**
 
 >Das fette **x** bedeutet Sternchen. Ich weiß nicht, wie man es hier darstellt.
 
