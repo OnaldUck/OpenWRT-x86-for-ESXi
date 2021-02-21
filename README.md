@@ -39,9 +39,13 @@ Anschliessend starten wir die Menügeführte / Textbasierende Konfiguration mit 
   + open-vm-tools | **x**
 + Administration
   + htop | **x**
++ LuCI > 1. Collections
+  + luci | **x**
 + Kernel modules > Network Devices
   + kmod-vmxnet3 | **x**
+
 Bei der Gelegenheit unnütze Treiber entfernen. Den Stern entfernen
+
   + kmod-bnx2
   + kmod-e1000e
   + kmod-forcedeth
@@ -51,8 +55,6 @@ Bei der Gelegenheit unnütze Treiber entfernen. Den Stern entfernen
   + kmod-ph-realtek
   + kmod-mii
   + komd-libphy
-+ LuCI > 1. Collections
-  + luci | **x**
 
 Falls man keinen OpenVPN Support oder WLAN Support benötigt, so kann man auf den Rest verzichten und direkt kompilieren.
 Hier die benötigten Module für einen WLAN-Access Poiint
