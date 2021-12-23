@@ -35,14 +35,15 @@ Anschliessend starten wir die Menügeführte / Textbasierende Konfiguration mit 
 + Target Images
   + Build VMware image files (VMDK) > **x**
   + Seconds to wait before booting the default entry | **1**
-+ Utilities
-  + open-vm-tools | **x**
-+ Administration
-  + htop | **x**
-+ LuCI > 1. Collections
-  + luci | **x**
 + Kernel modules > Network Devices
   + kmod-vmxnet3 | **x**
++ Utilities
+  + open-vm-tools | **x**
++ LuCI > 1. Collections
+  + luci | **x**
++ Administration
+  + htop | **x**
+
 
 Falls man keinen OpenVPN Support oder WLAN Support benötigt, so kann man auf den Rest verzichten und direkt kompilieren.
 Hier die benötigten Module für einen WLAN-Access Poiint
@@ -105,9 +106,12 @@ openwrt-x86-64-generic-ext4-combined.img -d thin /vmfs/volumes/ssd/Openwrt/Openw
 ![make_menuconfig](https://user-images.githubusercontent.com/35377000/86009497-95997680-ba1a-11ea-89e8-fca909e72438.png)
 
 ## Bei Problemen, alles wieder neu machen ;-( ##
+
+```
 make clean && make tools/clean && make toolchain/clean
 make menuconfig
 ./scripts/feeds update -a
 ./scripts/feeds install -a
 make tools/install
 make toolchain/install
+```
