@@ -63,7 +63,7 @@ Dies braucht man, wenn man OpenVPN Server oder Client auf den Router laufen lass
 + LuCI > 3. Applications
   + luci-app-openvpn | **x**
   + luci-app-statistics | **x**
-  + luci-appwireguard | **x**
+  + luci-app-wireguard | **x**
 + Network > VPN
   + openvpn-openssl | **x**
   + wireguard | **x**
@@ -104,3 +104,10 @@ openwrt-x86-64-generic-ext4-combined.img -d thin /vmfs/volumes/ssd/Openwrt/Openw
 ### Ein paar Bilder
 ![make_menuconfig](https://user-images.githubusercontent.com/35377000/86009497-95997680-ba1a-11ea-89e8-fca909e72438.png)
 
+## Bei Problemen, alles wieder neu machen ;-( ##
+make clean && make tools/clean && make toolchain/clean
+make menuconfig
+./scripts/feeds update -a
+./scripts/feeds install -a
+make tools/install
+make toolchain/install
